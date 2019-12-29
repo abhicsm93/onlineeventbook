@@ -1,3 +1,8 @@
 .row {
   margin-top: 4rem;
 }
+
+.btn {
+  box-shadow: 2px 2px 4px 2px rgb(92, 90, 90);
+  margin: 0.2rem;
+}
