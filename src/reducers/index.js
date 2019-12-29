@@ -8,6 +8,18 @@ const reducer = (state = {}, action) => {
       return { ...state, loading: true };
     case "COMING_MOVIE_DATA":
       return { ...state, coming_movie: action.json, loading: false };
+    case "GET_SELECTED_SHOWING_MOVIE":
+      return { ...state, loading: true };
+    case "SELECTED_SHOWING_MOVIE_DATA":
+      return { ...state, selected_showing_movie: action.json, loading: false };
+    case "GET_SELECTED_COMING_SOON_MOVIE":
+      return { ...state, loading: true };
+    case "SELECTED_COMING_SOON_MOVIE_DATA":
+      return {
+        ...state,
+        selected_coming_soon_movie: action.json,
+        loading: false
+      };
     default:
       return state;
   }
