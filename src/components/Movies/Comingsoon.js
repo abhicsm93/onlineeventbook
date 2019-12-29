@@ -13,7 +13,7 @@ class Comingsoon extends Component {
       <div>
         <h3>Coming Soon</h3>
         <div className="row">
-          <DisplayList moviedata={this.props.movieData} />
+          <DisplayList type="comingsoon" moviedata={this.props.movieData} />
         </div>
       </div>
     );

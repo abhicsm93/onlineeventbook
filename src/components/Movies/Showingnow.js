@@ -13,7 +13,7 @@ class Showingnow extends Component {
       <div>
         <h3>Showing Now</h3>
         <div className="row">
-          <DisplayList moviedata={this.props.movieData} />
+          <DisplayList type="showingnow" moviedata={this.props.movieData} />
         </div>
       </div>
     );

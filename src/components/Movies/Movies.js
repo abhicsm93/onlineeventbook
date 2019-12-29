@@ -11,10 +11,20 @@ class Movies extends Component {
           <span>
             <button className="btn btn-info">
               {" "}
-              <Link to="/movies/showingnow">Showing Now</Link>{" "}
+              <Link
+                to="/movies/showingnow"
+                style={{ color: "black", textDecoration: "none" }}
+              >
+                Showing Now
+              </Link>{" "}
             </button>
             <button className="btn btn-info">
-              <Link to="/movies/comingsoon">Coming Soon</Link>{" "}
+              <Link
+                to="/movies/comingsoon"
+                style={{ color: "black", textDecoration: "none" }}
+              >
+                Coming Soon
+              </Link>{" "}
             </button>
           </span>
         </div>
