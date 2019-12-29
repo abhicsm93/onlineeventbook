@@ -31,14 +31,22 @@ const DisplayDetails = ({ type, detailsData }) => {
         <h5 style={{ marginTop: "2rem" }}>Cast:</h5>
         <div style={{ display: "flex" }}>
           {detailsData.data[0].actors.map(actor => {
-            return <p style={{ margin: "1rem" }}>{actor}</p>;
+            return (
+              <p key={actor} style={{ margin: "1rem" }}>
+                {actor}
+              </p>
+            );
           })}
         </div>
         <p></p>
         <h5>Genres:</h5>
         <div style={{ display: "flex" }}>
           {detailsData.data[0].genres.map(genre => {
-            return <p style={{ margin: "1rem" }}>{genre}</p>;
+            return (
+              <p key={genre} style={{ margin: "1rem" }}>
+                {genre}
+              </p>
+            );
           })}
         </div>
         <h5>StoryLine:</h5>
