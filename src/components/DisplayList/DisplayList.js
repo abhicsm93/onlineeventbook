@@ -5,9 +5,9 @@ const DisplayList = ({ moviedata }) => {
   if (moviedata !== undefined) {
     return moviedata.data.map(movie => {
       return (
-        <div key={movie.title} className="col-sm-2 col-xs-2">
+        <div key={movie.title} className="col-6 col-sm-2 ">
           <figure>
-            <img src={movie.posterurl}></img>
+            <img src={movie.posterurl} alt={movie.title}></img>
             <figcaption>
               <strong>{movie.title}</strong>
             </figcaption>
